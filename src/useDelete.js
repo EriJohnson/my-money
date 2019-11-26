@@ -27,7 +27,7 @@ const useDelete = () => {
         dispatch({ type: 'REQUEST' })
         axios
             .delete(url)
-            .then(res => {
+            .then(() => {
                 dispatch({
                     type: 'SUCCESS',
                 })
