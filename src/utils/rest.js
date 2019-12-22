@@ -21,7 +21,7 @@ const reducer = (state, action) => {
         }
     }
     return state
-}
+}  
 
 const init = baseUrl => {
     const useGet = resource => {
@@ -62,7 +62,7 @@ const init = baseUrl => {
             })
         }
         return [data, remove]
-        
+
     }
     return {
         useGet,

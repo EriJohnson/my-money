@@ -19,7 +19,7 @@ const Movimentacoes = ({ match }) => {
         setValor(evt.target.value)
     }
     const salvarMovimentacao = async () => {
-        if (isNaN(valor) && valor.search(/^[-]?\d+(\.)?\d+?$/) >= 0) {
+        if (!isNaN(valor) && valor.search(/^[-]?\d+(\.)?\d+?$/) >= 0) {
             await salvar({
                 descricao,
                 valor: parseFloat(valor)
